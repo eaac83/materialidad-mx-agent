@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#17202a}
+main{display:flex;min-height:100vh}
+aside{width:245px;background:#102a43;color:white;padding:28px 18px;position:fixed;height:100vh}
+.brand{font-size:25px;font-weight:800;margin-bottom:35px}
+.brand span{color:#5eead4}.brand small{display:block;font-size:11px;font-weight:400;color:#a9c0d3;margin-top:5px}
+aside button{display:block;width:100%;padding:13px 14px;margin:6px 0;border:0;border-radius:9px;background:transparent;color:#cbd8e4;text-align:left;font-size:14px;cursor:pointer}
+aside button.active,aside button:hover{background:#1d4666;color:white}
+.content{margin-left:245px;padding:38px;max-width:1200px;width:100%}
+h1{font-size:30px;margin:0 0 5px}.lead{color:#64748b;margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:25px 0}
+.card,.panel{background:white;border:1px solid #e3e8ee;border-radius:14px;padding:22px}
+.card strong{display:block;font-size:32px;color:#0f766e}.card span{color:#64748b}.panel{margin:18px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{font-size:13px;font-weight:700;color:#34495e}
+input,select,textarea{display:block;width:100%;margin-top:7px;border:1px solid #cbd5e1;border-radius:8px;padding:11px;font:inherit;background:white}
+textarea{min-height:85px;resize:vertical}
+.primary{border:0;border-radius:9px;background:#0f766e;color:white;padding:12px 18px;font-weight:700;cursor:pointer;align-self:end}
+.row,.case{display:grid;grid-template-columns:160px 1fr 1fr;gap:15px;padding:12px 0;border-bottom:1px solid #edf1f5}.case{grid-template-columns:1fr auto;align-items:center}.case small{display:block;color:#64748b;margin-top:5px}
+.ok,.warn{padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700}.ok{background:#dcfce7;color:#166534}.warn{background:#fef3c7;color:#92400e}
+.question{display:block;margin:18px 0}.question span{display:block}.meter{display:flex;align-items:center;gap:18px;float:right}.meter progress{width:150px}.flow{padding:20px;background:#f0fdfa;border-radius:10px;color:#115e59;font-weight:700}
+@media(max-width:800px){aside{width:100%;height:auto;position:static}main{display:block}.content{margin:0;padding:20px}.grid,.cards{grid-template-columns:1fr}.meter{float:none;margin-bottom:20px}}
